@@ -1,0 +1,8 @@
+@media (min-width: 836px) {
+    .hero__banner p{
+        width: auto;
+    }
+    .hero__banner p:last-child{
+        width: auto;
+    }
+}
