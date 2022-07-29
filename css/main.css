@@ -37,17 +37,18 @@ body{
 
 /*Header*/
 .header{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
+    gap: var(--spacing--xl);
     width: 100%;
     min-height: 128px;
     background-color: var(--light);
-    justify-content: space-between;
 }
 .header__logo{
     background-color: var(--primary);
     padding: var(--spacing--xl);
-    
+    height: 100%;
 }
 .header__logo img{
     object-fit: contain;
@@ -62,7 +63,6 @@ body{
 .header__title{
     display: flex;
     flex-direction: column;
-    padding: 0 var(--spacing--xl);
     width: -webkit-fill-available;
 }
 .header__title p{
@@ -78,6 +78,5 @@ body{
 .header__freeSpace p{
     font-weight: 700;
     font-size: var(--font-lg);
-    width: max-content;
     color: var(--primary);
 }
