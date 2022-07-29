@@ -188,3 +188,19 @@ body{
     border: none;
     cursor: pointer;
 }
+.banner{
+    background-color: var(--shadow);
+    padding: var(--spacing--xl);
+    display: flex;
+    align-items: center;
+    border-bottom: 7px solid var(--primary);
+}
+.banner img{
+    margin-right: var(--spacing--xl);
+}
+.banner h3{
+    color: var(--primary);
+    font-size: var(--font-md);
+    max-width: 300px;
+    line-height: 1.2;
+}
