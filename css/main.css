@@ -39,9 +39,13 @@ body{
 
 /*Header*/
 .header{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto var(--spacing--xl) 1fr var(--spacing--xl) auto;
     grid-template-columns: auto 1fr auto;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: var(--spacing--xl);
     width: 100%;
     min-height: 128px;
@@ -53,18 +57,29 @@ body{
     height: 100%;
 }
 .header__logo img{
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 160px;
     height: 55px;
 }
 .header__title{
     color: var(--primary);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .header__title{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: -webkit-fill-available;
 }
 .header__title p{
@@ -85,7 +100,9 @@ body{
 
 /*Main*/
 .main{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 35%;
     grid-template-columns: 1fr 35%;
     width: 100%;
 }
@@ -95,9 +112,16 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 390px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .hero__text{
     width: 280px;
@@ -121,16 +145,26 @@ body{
 }
 .hero__banner{
     background-color: var(--primary-opacity) ;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .hero__banner p{
     font-weight: 700;
     color: var(--light);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: var(--spacing--lg) var(--spacing--sm);
     font-size: var(--font-lg);
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
 }
 .hero__banner p img{
@@ -141,6 +175,8 @@ body{
     background-color: var(--secondary);
     text-transform: uppercase;
     text-align: center;
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
 }
 .main__form{
@@ -148,8 +184,13 @@ body{
     padding: var(--spacing--lg) var(--spacing--xl);
 }
 .form__title{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .form__title h2{
     text-align: center;
@@ -165,8 +206,13 @@ body{
     margin: var(--spacing--xs) auto;
 }
 .form__content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     row-gap: var(--spacing--xs);
 }
@@ -175,6 +221,18 @@ body{
     padding: var(--spacing--xs) var(--spacing--md);
     color: var(--dark);
     font-size: var(--font-xs);
+}
+.form__content input::-webkit-input-placeholder{
+    color: var(--dark);
+}
+.form__content input::-moz-placeholder{
+    color: var(--dark);
+}
+.form__content input:-ms-input-placeholder{
+    color: var(--dark);
+}
+.form__content input::-ms-input-placeholder{
+    color: var(--dark);
 }
 .form__content input::placeholder{
     color: var(--dark);
@@ -191,8 +249,12 @@ body{
 .banner{
     background-color: var(--shadow);
     padding: var(--spacing--xl);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 7px solid var(--primary);
 }
 .banner img{
@@ -206,6 +268,7 @@ body{
 }
 .specs{
     padding: var(--spacing--xl);
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fill, 24%);
     gap:var(--spacing--sm);
@@ -228,6 +291,8 @@ footer{
     width: 100%;
 }
 footer div:first-child{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .footer__contact{
