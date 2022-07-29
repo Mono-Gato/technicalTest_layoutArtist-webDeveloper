@@ -204,3 +204,23 @@ body{
     max-width: 300px;
     line-height: 1.2;
 }
+.specs{
+    padding: var(--spacing--xl);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 24%);
+    gap:var(--spacing--sm);
+    place-content: center;
+}
+.specs__card{
+    border: 1.33px solid #C1C1C1;
+    padding: var(--spacing--sm);
+}
+.specs__card h4{
+    font-weight: 700;
+    color: var(--primary);
+    font-size: var(--font-sm);
+    margin-bottom: var(--spacing--xs);
+}
+.specs__card p{
+    font-size: var(--font-xs);
+}
