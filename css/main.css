@@ -212,7 +212,7 @@ body{
     place-content: center;
 }
 .specs__card{
-    border: 1.33px solid #C1C1C1;
+    border: 1.33px solid var(--shadow);
     padding: var(--spacing--sm);
 }
 .specs__card h4{
@@ -223,4 +223,34 @@ body{
 }
 .specs__card p{
     font-size: var(--font-xs);
+}
+footer{
+    width: 100%;
+}
+footer div:first-child{
+    display: flex;
+}
+.footer__contact{
+    background-color: var(--primary);
+    padding: var(--spacing--lg);
+    font-weight: 700;
+    font-size: var(--font-sm);
+    color: var(--light);
+    width: 40%;
+    
+}
+.footer__footer{
+    background-color: var(--shadow);
+    padding: var(--spacing--lg);
+    font-weight: 700;
+    font-size: var(--font-sm);
+    color: var(--primary);
+    width: 60%;
+}
+.footer__copyright{
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    font-size: var(--font-xs);
+    padding: var(--spacing--xs);
 }

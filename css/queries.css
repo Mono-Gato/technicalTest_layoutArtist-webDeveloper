@@ -1,4 +1,4 @@
-@media (min-width: 836px) {
+@media (max-width: 1250px) {
     .hero__banner p{
         width: auto;
     }
