@@ -13,12 +13,12 @@
 --dark: #4D4D4D;
 
 --font-xl: 3.6rem;
---font-lg: 2.4rem;
+--font-lg: 2.2rem;
 --font-md: 2rem;
 --font-sm: 1.6rem;
 --font-xs: 1.2rem;
 
---spacing--lg: 3.2rem;
+--spacing--xl: 3.2rem;
 --spacing--lg: 2rem;
 --spacing--md: 1.6rem;
 --spacing--sm: 1.4rem;
@@ -33,4 +33,51 @@ body{
     max-width: 100vw;
     color: var(--dark);
     font-weight: 400;
+}
+
+/*Header*/
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 128px;
+    background-color: var(--light);
+    justify-content: space-between;
+}
+.header__logo{
+    background-color: var(--primary);
+    padding: var(--spacing--xl);
+    
+}
+.header__logo img{
+    object-fit: contain;
+    width: 160px;
+    height: 55px;
+}
+.header__title{
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+}
+.header__title{
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--spacing--xl);
+    width: -webkit-fill-available;
+}
+.header__title p{
+    color: var(--primary);
+    font-size: var(--font-lg);
+}
+.header__title p:nth-child(1){
+    font-weight: 700;
+}
+.header__freeSpace{
+    padding-right: var(--spacing--xl);
+}
+.header__freeSpace p{
+    font-weight: 700;
+    font-size: var(--font-lg);
+    width: max-content;
+    color: var(--primary);
 }
